@@ -47,3 +47,14 @@ console.log(`Shipping Cost: $${calculateShippingCost(10, "USA", true)}`)//Output
 console.log(`Shipping Cost: $${calculateShippingCost(5, "Canada", false)}`)// Output: Shipping Cost $13.5
 
 //Task 5 Returning Value
+function calculateLoanInterest(principal, rate, years) {
+    const interest = principal * rate * years;
+    console.log(`Total Interest: $${interest.toFixed(2)}`);
+    
+    return interest;
+};//function to calculate intrest
+
+calculateLoanInterest(1000, 0.05, 3); // Output: Total Interest: $150.00
+calculateLoanInterest(5000, 0.07, 5); // Output: Total Interest: $1750.00
+
+//Task 6 
