@@ -66,3 +66,15 @@ function filterHighValueTransactions(transactions, filterFunction) {
 console.log (filterHighValueTransactions(transactions))// Output: [1200, 3000, 2200]
 
 //Task 7 Closures
+function createBudgetTracker() {
+    let balance = 0
+    return function(expense) {
+        balance -= expense;
+        return balance
+    }
+};
+let budget = createBudgetTracker()
+console.log(`Current Balance: $${budget(300)}`);
+console.log(`Current Balance: $${budget(200)}`);
+
+//Task 8 Recursion in JavaScript
