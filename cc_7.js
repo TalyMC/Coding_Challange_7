@@ -57,4 +57,12 @@ function calculateLoanInterest(principal, rate, years) {
 calculateLoanInterest(1000, 0.05, 3); // Output: Total Interest: $150.00
 calculateLoanInterest(5000, 0.07, 5); // Output: Total Interest: $1750.00
 
-//Task 6 
+//Task 6 Higher-Order Function
+let transactions = [500, 1200, 3000, 800, 2200];
+function filterHighValueTransactions(transactions, filterFunction) {
+    return transactions.filter(amount => amount > 1000)
+};//function to filter transactions above $1000
+
+console.log (filterHighValueTransactions(transactions))// Output: [1200, 3000, 2200]
+
+//Task 7 Closures
